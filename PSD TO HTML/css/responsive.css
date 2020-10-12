@@ -1,0 +1,25 @@
+/* Teblet Layout */
+@media only screen and (min-width:200px) and (max-width:991px){
+.social_area {max-width: 460px;padding: 14px;}
+.inner_menu{background: none;min-height: auto;}
+.inner_menu::after{display: none;}
+.mean-container .mean-nav {margin-top: 0px;width: 80%;}
+.inner_header_area {padding: 20px 0px;}
+#slider_area {margin-top: 0;}
+.inner_hero h2 {font-size: 48px;}
+}
+/* Mobile Layout */
+@media only screen and (min-width:200px) and (max-width:480px){
+.mini_menu {width: 100%;margin-bottom: 10px;}
+.mini_menu ul,.social_area ul {text-align: center;}
+.search_area,.logo_area {float:none;width: 50%;margin: 0 auto; text-align: center;}
+.social_area ul li{margin: 0 5px;}
+.inner_hero h2 {font-size: 25px;margin-left: 0;}
+.inner_hero {margin-bottom: 20px;}
+#content_area,#footer_area {padding: 25px 0;}
+.common_area,.chaild_footer {width: 98%;}
+.left_copyright{width: 100%;float: left;}
+.right_copyright{width: 100%;float: left;}
+.right_copyright p{margin-top: 0;}
+}
+
