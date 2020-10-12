@@ -1,0 +1,577 @@
+/* ==========================================
+Common CSS
+============================================= */
+*, *::after, *::before{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    padding: 0;
+    color: #000000;
+    font-family: Georgia;
+    font-size: 16px;
+    line-height: 1.5em;
+    
+}
+.container{
+    margin: 0 auto;
+    max-width: 960px;
+    width: 96%;
+}
+img{
+    max-width: 100%;
+    height: auto;
+}
+/* ==========================================
+Top Header CSS
+============================================= */
+.header_area{
+    width: 100%;
+    clear: both;
+}
+#top_header_area{
+    background: #ba2e1f;
+    padding: 15px 0px;
+    width: auto;
+}
+.inner_top_header{
+    overflow: hidden;
+
+}
+.mini_menu{
+    float: left;
+    width: 70%;
+    padding-top:5px;
+}
+.mini_menu ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-align: left;
+}
+.mini_menu ul li{
+    display: inline-block;
+    position: relative;
+    margin-right: 15px;
+}
+.mini_menu ul li::after{
+    background: #ffffff;
+    content:"";
+    position: absolute;
+    top: 6px;
+    right: -10px;
+    width: 1px;
+    height: 12px;
+}
+.mini_menu ul li:last-child::after{
+    display: none;
+    
+}
+.mini_menu ul li a{
+    color: #ffffff;
+    display: block;
+    font-size: 16px;
+    text-decoration: none;
+}
+.mini_menu ul li a:hover{
+    color: #dddddd;
+}
+.search_area{
+    width: 30%;
+    float: right; 
+}
+.search_area form{
+    width: 100%;
+    max-width: 210px;
+    float: right;
+    padding: 2%;
+    background: #ffffff;
+    border-radius: 25px;
+
+}
+.search_area input{
+    width: 75%;
+    float: left;
+    color: #000000;
+    padding: 1%;
+    border: 0px solid;
+}
+.search_area input[type="submit"]{
+    width: 23%;
+    cursor: pointer;
+    background: url(img/search.png);
+    background-repeat: no-repeat;
+    background-position: right;
+}
+/* ==========================================
+Main Header CSS
+============================================= */
+#main_header_area{
+    width: 100%;
+    clear: both;
+}
+.inner_header_area{
+    padding: 40px 0px;
+    overflow: hidden;
+}
+.logo_area{
+    width: 240px;
+    float: left;
+}
+.social_area{
+    width: 100%;
+    max-width: 600px;
+    float: right;
+    padding: 20px;
+}
+.social_area ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-align: right;
+}
+.social_area ul li{
+    display: inline-block;
+    margin-left: 15px;
+}
+.social_area ul li a{
+    display: block;
+    text-decoration: none;
+}
+.social_area ul li a i{
+    width: 35px;
+    padding-top: 9px;
+    color: #ffffff;
+    height: 35px;
+    display: block;
+    text-align: center;
+    background: #333333;
+    border-radius: 50%;
+    text-decoration: none;
+    transition: 0.5s;
+}
+.social_area ul li a:hover i{
+    background: #ba2e1f;
+}
+.social_area ul li a:hover i.fa-linkedin-in{
+    background: #4C8CCF;
+}
+.social_area ul li a:hover i.fa-twitter{
+    background: #00A3F7;
+}
+.social_area ul li a:hover i.fa-pinterest{
+    background: #AF363B;
+}
+.social_area ul li a:hover i.fa-google-plus{
+    background: #E23E39;
+}
+.social_area ul li a:hover i.fa-rss{
+    background: #ee802f;
+}
+/* ==========================================
+Main Menu CSS
+============================================= */
+#main_menu{
+    width: 100%;
+    clear: both;
+}
+.inner_menu{
+    padding: 15px 0;
+    min-height: 30px;
+    background: #333333;
+    border-radius: 5px;
+    position: relative;
+    z-index: 1;
+}
+.inner_menu::after{
+    background: #2b2b2b;
+    position: absolute;
+    width: 100%;
+    height: 50%;
+    bottom: 0;
+    left: 0;
+    content: "";
+    z-index: -1;
+}
+#main_menu ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-align: center;
+}
+#main_menu ul li{
+    margin: 0 5px;
+    display: inline-block;
+    position: relative;
+}
+#main_menu ul li a{
+    color: #ffffff;
+    display: block;
+    padding: 5px;
+    text-decoration: none;
+
+}
+#main_menu ul li a:hover{
+    color: #ba2e1f;
+}
+#main_menu ul li:hover a{
+    color: #ba2e1f;
+}
+#main_menu ul li:hover ul li a{
+    color: #ffffff;
+}
+
+/* Drop Down Style */
+
+#main_menu ul ul{
+    position: absolute;
+    background: #ba2e1f ;
+    width: 180px;
+    left: -999999px;
+    top: 33px;
+}
+#main_menu ul li:hover ul{
+    left: 0;
+}
+#main_menu ul li:hover ul ul{
+    left: -999999px;
+}
+#main_menu ul ul ul{
+    left: -999999px;
+    top: 0px;
+}
+#main_menu ul li ul li:hover ul{
+    left: 180px;
+}
+#main_menu ul ul li{
+    margin: 0;
+    display: block;
+}
+#main_menu ul ul li a:hover{
+    color: #ffffff;
+    background: #333333;
+}
+#main_menu ul ul li:hover a{
+    color: #ffffff;
+    background: #333333;
+}
+#main_menu ul ul li:hover ul li a{
+    color: #ffffff;
+    background: none;
+}
+#main_menu ul ul li ul li a:hover{
+    color: #ffffff;
+    background: #333333;
+}
+/* ==========================================
+Slider CSS
+============================================= */
+#slider_area{
+    margin-top: 20px;
+}
+.item{
+    position: relative;
+}
+.slider_caption{
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.slider_caption h1{
+    color: #ffffff;
+    font-size: 35px;
+}
+/* ==========================================
+Hero Area CSS
+============================================= */
+#hero_area{
+    background-color: #ffffff;
+}
+.inner_hero{
+    overflow: hidden;
+}
+.inner_hero img{
+    float: left;
+    margin-right: 48px;
+}
+.inner_hero h2{
+    font-size: 86px;
+    font-weight: normal;
+    line-height: 1.2em;
+    margin-left: 15px;
+    margin-bottom: 15px;
+}
+.inner_hero p{
+    color: #666666;
+    font-size: 16px;
+    font-weight: normal;
+}
+.inner_hero a{
+    float: right;
+    color: #ba2e1f;
+    font-size: 16px;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+.inner_hero a:hover{
+    color: #000000;
+}
+/* ==========================================
+Content Area CSS
+============================================= */
+#content_area{
+    background-color: #f2f2f2;
+    padding: 45px 0;
+}
+.inner_content{
+    overflow: hidden;
+}
+.common_area{
+    width: 32%;
+    float: left;
+    margin: 0 1% 10px;
+}
+.common_area h2{
+    color: #333333;
+    font-size: 26px;
+    font-weight: normal;
+    padding-bottom: 20px;
+}
+.common_area p{
+    color: #878787;
+    font-size: 14px;
+    font-weight: normal;
+    margin-bottom: 10px; 
+}
+.common_area a{
+    color: #ba2e1f;
+    font-size: 14px;
+    font-weight: normal;
+    text-decoration: none;
+    clear: both;
+    float: right;
+    display: inline-block;
+}
+.common_area a:hover{
+    color: #000000
+}
+.about_area{
+    margin-left: 0;
+}
+.about_area img{
+    border: 1px solid #dfdfdf;
+    padding: 5px;
+    display: block;
+    margin-bottom: 15px;
+}
+.service_area{
+
+}
+.chaild_service{
+    
+}
+.chaild_service .service_img{
+    width: 25%;
+    float: left;
+    margin-bottom: 26px;
+}
+.chaild_service .service_text{
+    width: 75%;
+    float: right;
+}
+.chaild_service .service_text h3{
+    font-size: 14px;
+    margin-top: 0;
+    margin-bottom: 5px;
+}
+.chaild_service .service_text p{
+    margin-top: 0;
+    line-height: 1.4em;
+    margin-bottom: 30px;
+}
+.testimonial{
+    margin-right: 0;
+}
+.chaild_testimonial{
+    width: 100%;
+    overflow: hidden;
+}
+.chaild_testimonial h3{
+    color: #989899;
+    font-size: 16px;
+    font-weight: bold;
+    background: url(img/systematic01.jpg);
+    background-repeat: no-repeat;
+    padding: 5px 0px 0px 65px;
+    margin: 0px;
+}
+.chaild_testimonial span{
+    font-weight: normal;
+}
+/* ==========================================
+Footer Area CSS
+============================================= */
+#footer_area{
+    background: #ffffff;
+    padding: 45px 0;
+}
+.inner_footer{
+    overflow: hidden;
+}
+.chaild_footer{
+    padding: 1%;
+    margin: 0 1% 10px;
+    width: 23%;
+    float: left;
+}
+.chaild_footer:first-child{
+    margin-left: 0;
+    padding-left: 0;
+}
+.chaild_footer:last-child{
+    margin-right: 0;
+    padding-right: 0;
+}
+.chaild_footer h3{
+    color: #666666;
+    font-size: 16px;
+    margin-top: 0;
+    padding-top: 5px;
+    border-top: 1px solid #666666;
+    text-transform: uppercase;
+}
+.chaild_footer h6{
+
+}
+.chaild_footer p{
+    color: #666666;
+    font-size: 14px;
+    margin-top: 0;
+}
+.chaild_footer p a{
+    color: #ba2e1f;
+    text-decoration: none;
+}
+.chaild_footer ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.chaild_footer ul ul{
+    display: none;
+}
+.chaild_footer li{
+    display: block;
+    border-bottom: 1px solid #666666;
+    padding: 5px;
+}
+.chaild_footer li:last-child{
+    border-bottom: 0px solid;
+}
+.chaild_footer li i{
+    color: #666666;
+    padding-right: 10px;
+}
+.chaild_footer li a{
+    color: #666666;
+    font-size: 14px;
+    text-decoration: none;
+}
+.chaild_footer li a:hover{
+    color: #ba2e1f;
+}
+.chaild_footer h4 {
+    color: #666666;
+    font-size: 14px;
+    margin: 0;
+
+}
+.chaild_footer h4 a{
+    color: #666666;
+    float: none;
+    text-decoration: none;
+}
+.chaild_footer h4 a:hover{
+    color: #ba2e1f;
+    
+}
+.chaild_footer h6{
+    color: #666666;
+    font-size: 12px;
+    margin-bottom: 10px;
+}
+.chaild_footer h6 a{
+    float: none;
+    color: #ba2e1f;
+    font-size: 12px;
+    text-decoration: none;
+}
+.chaild_footer h6 a:hover{
+    color: #000000;
+}
+.chaild_blog{
+    width: 100%;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+.chaild_blog p{
+    margin: 0;
+}
+.chaild_blog  a{
+    color: #ba2e1f;
+    font-size: 14px;
+    float: right;
+    text-decoration: none;
+}
+.chaild_blog  a:hover{
+    color: #000000;
+}
+.chaild_footer input{
+    background: #f2f2f2;
+    border: 0px solid;
+    border-radius: 5px;
+    padding: 10px 5%;
+    margin-bottom: 10px;
+    width: 96%;
+}
+.chaild_footer textarea{
+    background: #f2f2f2;
+    border: 0px solid;
+    border-radius: 5px;
+    padding: 10px 5%;
+    margin-bottom: 10px;
+    width: 96%;
+    height: 100px;
+}
+.chaild_footer input[type="submit"]{
+    width: 80px;
+    color: #ba2e1f;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.chaild_footer input[type="submit"]:hover{
+    background: #ba2e1f;
+    color: #ffffff;
+}
+/* ==========================================
+Copyright Area CSS
+============================================= */
+#copyright_area{
+    background: #f2f2f2;
+}
+.inner_copyright{
+    overflow: hidden;
+}
+.left_copyright{
+    color: #919191;
+    float: left;
+    font-size: 14px;
+}
+.right_copyright{
+    color: #919191;
+    float: right;
+    font-size: 14px;
+}
